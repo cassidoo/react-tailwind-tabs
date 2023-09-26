@@ -25,7 +25,7 @@ import {
 	TailwindTab,
 	TailwindTabPanels,
 	TailwindTabPanel,
-} from "TailwindTabs.jsx";
+} from "./TailwindTabs.jsx";
 
 function SomeComponent() {
 	return (
@@ -52,7 +52,7 @@ function SomeComponent() {
 Using this style is a bit more restricted, in that you can only pass in your data as an array with a `label` and `content`, and it generates the tabs for you.
 
 ```jsx
-import { TailwindComposedTabs } from "TailwindTabs.jsx";
+import { TailwindComposedTabs } from "./TailwindTabs.jsx";
 
 function SomeComponent() {
 	const tabData = [
@@ -66,7 +66,7 @@ function SomeComponent() {
 		},
 	];
 
-	return <TailwindComposedTabs />;
+	return <TailwindComposedTabs data={tabData} />;
 }
 ```
 
