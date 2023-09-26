@@ -6,7 +6,7 @@ React Context-powered tabs with Tailwind styling.
 
 Don't clone the repo, don't `npm install` anything, just copy the `TailwindTabs.jsx` file into your own codebase. People install too much these days.
 
-This project assumes you have React (16+) and Tailwind already installed. It's also compatible with Preact, but not _as_ tested so YMMV. You can use this with any bundler!
+This project assumes you have React (16+) and Tailwind already installed. It's also compatible with Preact (just change the import at the top), but not _as_ tested so YMMV. You can use this with any bundler!
 
 I didn't want to mess with Tailwind JIT stuff for custom color classes, so just edit the classes at the top of the file for the colors that you want!
 
