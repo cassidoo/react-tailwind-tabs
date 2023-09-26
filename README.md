@@ -82,6 +82,14 @@ let textColorClass = "text-black";
 let hoverTextColorClass = "hover:text-pink-600";
 ```
 
+## What if I don't want to use Tailwind?
+
+Just take out the CSS classes and add your own! Tailwind isn't necessary for the logic to work. You can add whatever classes you'd like.
+
 ## License and credit and stuff
 
-It'd be cool if you tell me if you use this, but follow your dreams. Check out the license if your company needs to know the deets.
+It'd be cool if you tell me if you use this, but follow your dreams and don't let me stop you. Check out the license if your company needs to know the deets.
+
+## Contributing
+
+I use/like this the way it is in my various projects (if I'm being honest, I open sourced it because I was lazy about sharing it to myself on different machines), so please don't add new features. If you want new features, fork it! If you wanna fix a bug or something, that's when a PR or issue would be better.
