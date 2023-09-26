@@ -86,6 +86,8 @@ let hoverTextColorClass = "hover:text-pink-600";
 
 Just take out the CSS classes and add your own! Tailwind isn't necessary for the logic to work. You can add whatever classes you'd like.
 
+You can also rename the components if you want. I called them this so that they wouldn't collide with any UI libraries that might already exist that have their own Tab components.
+
 ## License and credit and stuff
 
 It'd be cool if you tell me if you use this, but follow your dreams and don't let me stop you. Check out the license if your company needs to know the deets.
