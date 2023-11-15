@@ -64,6 +64,11 @@ function SomeComponent() {
 			label: "Tab #2",
 			content: <SomeExampleComponent />,
 		},
+		{
+			label: "Tab #3",
+			content: <SomeExampleComponent />,
+			disabled: true
+		},
 	];
 
 	return <TailwindComposedTabs data={tabData} />;
