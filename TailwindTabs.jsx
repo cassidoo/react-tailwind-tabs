@@ -38,8 +38,12 @@ function TailwindTab({ children, isDisabled, ...rest }) {
 	const isActive = index === activeIndex;
 	return (
 		<li
-			className={`inline-block cursor-pointer font-medium mr-2 p-4 ${tabBackgroundColorClass} ${textColorClass} border-b-4 ${hoverTextColorClass} ${hoverBorderColorClass} ${
-				isDisabled ? "disabled" : isActive ? `active ${borderColorClass}` : ""
+			className={`inline-block cursor-pointer font-medium bg-white mr-2 p-4 border-b-4 hover:text-pink-600 hover:border-accent-900 ${
+				isDisabled
+					? "disabled cursor-not-allowed opacity-50"
+					: isActive
+					? `active border-pink-300`
+					: ""
 			}`}
 			onClick={isDisabled ? undefined : () => setActiveIndex(index)}
 			key={index + "tab"}
@@ -64,7 +68,9 @@ function TailwindComposedTabs({ data }) {
 		<TailwindTabs>
 			<TailwindTabList>
 				{data.map((tab, i) => (
-					<TailwindTab key={`tw-tab-${i}`}>{tab.label}</TailwindTab>
+					<TailwindTab isDisabled={tab.disabled} key={`tw-tab-${i}`}>
+						{tab.label}
+					</TailwindTab>
 				))}
 			</TailwindTabList>
 			<TailwindTabPanels>
